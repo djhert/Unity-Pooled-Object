@@ -19,7 +19,7 @@ public class ObjectPool : MonoBehaviour {
 			obj.transform.SetParent (transform, false);
 			obj.objectPool = this;
 		}
-
+		obj.poolStart();
 		return obj;
 
 	}
